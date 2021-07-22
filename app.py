@@ -24,7 +24,10 @@ app.json_encoder = MongoJsonEncoder
 
 
 @app.route('/generate', methods=['GET', 'POST'])
-def hello_world():
+def generate():
+    """
+    An API to generate text predictions based on user input
+    """
     if request.method == 'GET':
         text_input = request.args.get('term')
         print(text_input)
