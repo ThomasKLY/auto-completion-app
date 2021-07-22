@@ -1,0 +1,40 @@
+@media only screen{
+    * { padding: 0; margin: 0; }
+    html, body { height: 100%; }
+    body, textarea {
+        font-family: "lucida sans", verdana, arial, helvetica, sans-serif;
+        font-size: 80%;
+    }
+    textarea { font-size: 100%;}
+    h1 { font-size: 1.4em; padding: 10px 10px 0; }
+    h2 { font-size: 1.2em; padding: 10px 10px 0; color:Navy;}
+    p { margin-top: 6px; padding: 0 10px 1em; }
+
+    .ui-widget { font-size: 0.8em; line-height:0.6em; }
+    .ui-widget .ui-widget { font-size: 0.7em; }
+
+    .ui-menu-item { font-size: 7pt; }
+
+    #inputDiv {
+        left: 1%;
+        right: 38%;
+    }
+
+    #msgs {
+        left: 63%;
+        right: 1%;
+    }
+
+    div.column {
+        border: 1px dotted #666;
+        background-color: #E6E6FA;
+        position: absolute;
+        top: 20px;    /* margin from top */
+        bottom: 20px; /* margin from bottom */
+        padding: 8px;
+    }
+    * html  {
+        height: 100%;
+    }
+
+}

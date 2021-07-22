@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amazon Smart Review</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+  <style>
+  .ui-autocomplete-loading {
+    background: white url('/try/jqueryui/ui-anim_basic_16x16.gif') right center no-repeat;
+  }
+  </style>
+  <script>
+  $(function() {
+    function log( message ) {
+      $( "<div>" ).text( message ).prependTo( "#log" );
+      $( "#log" ).scrollTop( 0 );
+    }
+
+    $( "#review" ).autocomplete({
+      source: "generate",
+      minLength: 5,
+      select: function( event, ui ) {
+        log( ui.item ?
+          "Selected: " + ui.item.value + " aka " + ui.item.id :
+          "Nothing selected, input was " + this.value );
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+
+<div class="ui-widget">
+  <label for="review">鸟：</label>
+    <textarea rows='14' cols='80' id="review"></textarea>
+</div>
+
+<div class="ui-widget" style="margin-top:2em; font-family:Arial">
+  Results
+  <div id="log" style="height: 200px; width: 500px; overflow: auto;" class="ui-widget-content"></div>
+</div>
+
+
+</body>
+</html>

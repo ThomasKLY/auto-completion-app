@@ -28,5 +28,5 @@ def generate_text(model_name, prompt, max_suggestion_length=20, top_p=0.8, num_r
         num_return_sequences=num_return_sequences
     )
 
-    results = [tokenizer.decode(output[prompt_size:], skip_special_tokens=True) for output in sample_outputs]
+    results = [tokenizer.decode(output, skip_special_tokens=True) for output in sample_outputs]
     return results
