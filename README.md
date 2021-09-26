@@ -1,7 +1,18 @@
 # Auto Completion App
 
-Reference materials:
+A smart textbox that provide text suggestions for user inputs. The text generation model is a GPT-2 model that was fine-tuned using Amazon Review dataset, it's sevred in a Flask app alongside with other web components.
 
+![20210726_025344](https://user-images.githubusercontent.com/29563646/134816797-a325b239-6163-4f12-b952-46b31af8eb1c.gif)
+
+### Dataset
+
+
+Amazone product data
+
+https://jmcauley.ucsd.edu/data/amazon/
+
+
+### Reference materials
 
 Hugging Face Course
 
